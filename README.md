@@ -91,17 +91,6 @@ python server.py
 #### 4. Access the Application
 Open your web browser and navigate to the frontend URL (e.g., `https://localhost:8000` if you are using the HTTPS version of `server.py`). The application should be fully functional.
 
-## ☁️ Production Deployment
-
-The application is deployed on a DigitalOcean droplet using a robust Nginx + Gunicorn architecture.
-
-*   **DNS**: The subdomain `shmeker.cdsv.dev` is pointed to the server's IP address.
-*   **Code**: The repository is cloned into `/var/www/shmeker.cdsv.dev`.
-*   **Services**: Two `systemd` services are configured:
-    1.  `shmeker-backend.service`: Manages the Gunicorn process running the Flask app.
-    2.  `shmeker-frontend.service`: Manages the `server.py` process serving the frontend files.
-*   **Nginx**: Acts as a reverse proxy. It serves frontend files from the frontend service and forwards all `/api/*` requests to the Gunicorn backend service. It also handles SSL termination.
-*   **HTTPS**: Secured using a Let's Encrypt certificate managed by Certbot.
 
 ## 🔮 Future Ideas
 
