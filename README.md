@@ -2,8 +2,8 @@
 
 Your smart companion for instantly verifying dual-currency price tags using your smartphone's camera. This application solves a common problem for consumers in Bulgaria by checking if the price in Euro (EUR) on a label is a fair conversion from the price in Bulgarian Lev (BGN), based on the official fixed rate.
 
-![App Screenshot](https://path-to-your/screenshot.gif)
-> *Replace the link above with a real screenshot or, even better, a GIF of your app in action!*
+### *for DEMO open https://shmeker.cdsv.dev with your smartphone*
+
 
 ## ✨ Features
 
