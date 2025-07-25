@@ -7,7 +7,9 @@ from PIL import Image
 import io
 
 #INITIAL SETUP
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'gcp_credentials.json'
+script_dir = os.path.dirname(os.path.abspath(__file__))
+credentials_path = os.path.join(script_dir, 'gcp_credentials.json')
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = credentials_path
 app = Flask(__name__)
 CORS(app)
 vision_client = vision.ImageAnnotatorClient()
